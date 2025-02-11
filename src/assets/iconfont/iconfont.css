@@ -1,0 +1,48 @@
+.iconmenu {
+    margin-right: 13px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    font-family: "ami-icons" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: baseline;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+
+[class*=" ami-icon-"],
+[class^=ami-icon-] {
+    font-family: ami-icons !important;
+    /* font-size: 16px; */
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: baseline;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+[class*=" idis-icon-"],
+[class^=idis-icon-] {
+    font-family: idis-icons !important;
+    /* font-size: 16px; */
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: baseline;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+

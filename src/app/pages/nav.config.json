@@ -1,0 +1,456 @@
+[
+    {
+        "name": "example",
+        "path": "/example",
+        "icon": "iconmenu ami-icon-shouye",
+        "isMenu": false,
+        "children": [
+            {
+                "name": "example",
+                "path": "/example",
+                "icon": "iconmenu ami-icon-shouye",
+                "isRoute": true,
+                "isMenu": false,
+                "children": [
+                    {
+                        "name": "test",
+                        "path": "/test",
+                        "icon": "iconmenu ami-icon-shouye"
+                    }
+                ]
+            },
+            {
+                "name": "example1",
+                "path": "/example1",
+                "icon": "iconmenu ami-icon-shouye",
+                "isRoute": true,
+                "isMenu": false
+            }
+        ]
+    },
+    {
+        "name": "home",
+        "path": "/home",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "homePage",
+                "path": "/home-page",
+                "icon": "iconmenu ami-icon-shouye",
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "stateMent",
+        "path": "/home",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "statementManagement",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-shouye",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "gisMap",
+        "path": "/home",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "mapShow",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-shouye",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "meterReading",
+        "path": "/home",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "deviceParameter",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-shujuchaxun",
+                "isRoute": true,
+                "isMenu": true,
+                "children": [
+                    {
+                        "name": "AutomaticRegistration",
+                        "path": "/home",
+                        "isRoute": true
+                    }
+                ]
+            },
+            {
+                
+                "name": "deviceOperate",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-shebeidangan",
+                "isRoute": true,
+                "isMenu": true,
+                "children": [
+                    {
+                        "name": "meterOperate",
+                        "path": "/home",
+                        "icon": "iconmenu ami-icon-shebeidangan",
+                        "isRoute": true
+                    },
+                    {
+                        "name": "terminalOperate",
+                        "path": "/home",
+                        "icon": "iconmenu ami-icon-shebeidangan",
+                        "isRoute": true
+                    }
+                ]
+            },
+            {
+                "name": "meterData",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-shebeicaozuo",
+                "isRoute": true,
+                "isMenu": true,
+                "children": [
+                    {
+                        "name": "meterDetails",
+                        "path": "/home",
+                        "icon": "iconmenu ami-icon-shouye",
+                        "isRoute": true,
+                        "isMenu": false
+                    }
+                ]
+            },
+            {
+                "name": "readingReport",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-shishizhaodu",
+                "isRoute": true,
+                "isMenu": true,
+                "children": [
+                    {
+                        "name": "pushNotification",
+                        "path": "/home",
+                        "isRoute": true,
+                        "isMenu": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "powerUsed",
+        "path": "/home",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "powerUser",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-yonghuyongdian",
+                "isRoute": true,
+                "isMenu": true
+            },
+            
+            {
+                "name": "userPower",
+                "path": "/home",
+                "icon": "iconmenu ami-icon-yongdianfenxi",
+                "isRoute": true,
+                "isMenu": true,
+                "children": [
+                    {
+                        "name": "specificUserPage",
+                        "path": "/specific-user-page",
+                        "icon": "",
+                        "isRoute": true,
+                        "isMenu": false
+                    },
+                    {
+                        "name": "publicUserPage",
+                        "path": "/public-user-page",
+                        "icon": "",
+                        "isRoute": true,
+                        "isMenu": false
+                    }
+                ]
+            },
+            {
+                "name": "userEvent",
+                "path": "/user-event",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "userReport",
+                "path": "/user-report",
+                "icon": "iconmenu ami-icon-fuhefenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                
+                
+                "name": "userReading",
+                "path": "/user-reading",
+                "icon": "iconmenu ami-icon-fuhefenxi",
+                "isRoute": true,
+                "isMenu": true,
+                "children": [
+                    {
+                        "name": "readingDetail",
+                        "path": "/reading-detail",
+                        "icon": "",
+                        "isRoute": true,
+                        "isMenu": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "powerSale",
+        "path": "/power-sale",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "sellingUser",
+                "path": "/selling-user",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "powerSelling",
+                "path": "/power-selling",
+                "icon": "iconmenu ami-icon-yonghuyongdian",
+                "isRoute": true,
+                "isMenu": true
+            },
+            
+            {
+                "name": "sellingConfig",
+                "path": "/selling-config",
+                "icon": "iconmenu ami-icon-yongdianfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                
+                "name": "powerPrice",
+                "path": "/power-price",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            
+            {
+                "name": "sellingReport",
+                "path": "/selling-report",
+                "icon": "iconmenu ami-icon-fuhefenxi",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "powerSupply",
+        "path": "/power-supply",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "businessModel",
+                "path": "/business-model",
+                "icon": "iconmenu ami-icon-yonghuyongdian",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "supplyEnergy",
+                "path": "/supply-energy",
+                "icon": "iconmenu ami-icon-yongdianfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "supplyLoad",
+                "path": "/supply-load",
+                "icon": "iconmenu ami-icon-fuhefenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "supplyReport",
+                "path": "/supply-report",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "powerDistribute",
+        "path": "/power-distribute",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "gridModel",
+                "path": "/grid-model",
+                "icon": "iconmenu ami-icon-yonghuyongdian",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "distributeEnergy",
+                "path": "/distribute-energy",
+                "icon": "iconmenu ami-icon-yongdianfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "substation",
+                "path": "/substation",
+                "icon": "iconmenu ami-icon-fuhefenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "gridLoss",
+                "path": "/grid-loss",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "distributeReport",
+                "path": "/distribute-report",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "ITOps",
+        "path": "/IT-ops",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "deviceMonitor",
+                "path": "/device-monitor",
+                "icon": "iconmenu ami-icon-yonghuyongdian",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "anomalyAnalysis",
+                "path": "/anomaly-analysis",
+                "icon": "iconmenu ami-icon-yongdianfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "workOrder",
+                "path": "/work-order",
+                "icon": "iconmenu ami-icon-fuhefenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "maintainReport",
+                "path": "/maintain-report",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "APIInterface",
+        "path": "/api-interface",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "APIMonitor",
+                "path": "/api-monitor",
+                "icon": "iconmenu ami-icon-yongdianfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "APILog",
+                "path": "/api-log",
+                "icon": "iconmenu ami-icon-fuhefenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "APIReport",
+                "path": "/api-report",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    },
+    {
+        "name": "systemConfig",
+        "path": "/system-config",
+        "isMenu": true,
+        "children": [
+            {
+                "name": "accountAuthority",
+                "path": "/account-authority",
+                "icon": "iconmenu ami-icon-yongdianfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "userProfile",
+                "path": "/user-profile",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            },
+            {
+                "name": "parameterConfig",
+                "path": "/parameter-config",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true,
+                "children": [
+                    {
+                        "name": "protocolAdd",
+                        "path": "/protocol-add",
+                        "icon": "iconmenu ami-icon-fuhefenxi",
+                        "isRoute": true
+                    },
+                    {
+                        "name": "typesAdd",
+                        "path": "/type-add",
+                        "icon": "iconmenu ami-icon-fuhefenxi",
+                        "isRoute": true
+                    },
+                    {
+                        "name": "repositoryAdd",
+                        "path": "/repository-add",
+                        "icon": "iconmenu ami-icon-fuhefenxi",
+                        "isRoute": true
+                    }
+                ]
+            },
+            {
+                "name": "reportConfig",
+                "path": "/report-config",
+                "icon": "iconmenu ami-icon-yichangfenxi",
+                "isRoute": true,
+                "isMenu": true
+            }
+        ]
+    }
+]

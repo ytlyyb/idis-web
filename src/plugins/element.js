@@ -1,0 +1,140 @@
+import Vue from 'vue'
+import {
+    Button,
+    Form,
+    FormItem,
+    Input,
+    Message,
+    Notification,
+    Carousel,
+    CarouselItem,
+    Select,
+    Option,
+    Container,
+    Header,
+    Aside,
+    Main,
+    Footer,
+    Menu,
+    MenuItem,
+    Tooltip,
+    MenuItemGroup,
+    Submenu,
+    Radio,
+    RadioButton,
+    RadioGroup,
+    DatePicker,
+    TimePicker,
+    TimeSelect,
+    Pagination,
+    Image,
+    Row,
+    Col,
+    Avatar,
+    Dropdown,
+    DropdownMenu,
+    DropdownItem,
+    Table,
+    TableColumn,
+    Loading,
+    Tabs,
+    TabPane,
+    Popover,
+    Dialog,
+    Switch,
+    Timeline,
+    TimelineItem,
+    MessageBox,
+    Cascader,
+    Drawer,
+    ButtonGroup,
+    InputNumber,
+    Checkbox,
+    CheckboxGroup,
+    Collapse,
+    CollapseItem,
+    Progress,
+    Alert,
+    Upload,
+    Tree,
+    Autocomplete,
+    Steps,
+    Step,
+    Transfer,
+    PageHeader,
+    Badge,
+    Divider,
+} from 'element-ui'
+import error from '../error/error';
+import infiniteScroll from "vue-infinite-scroll";
+import elTableInfiniteScroll from 'el-table-infinite-scroll';
+Vue.use(Divider);
+Vue.use(Tree);
+Vue.use(Progress);
+Vue.use(error);
+Vue.use(CheckboxGroup);
+Vue.prototype.$ELEMENT = { size: 'medium', zIndex: 3000 };
+Vue.use(elTableInfiniteScroll);
+Vue.use(infiniteScroll);
+Vue.use(Button)
+Vue.use(Checkbox)
+Vue.use(InputNumber)
+Vue.use(Cascader)
+Vue.use(ButtonGroup)
+Vue.use(Drawer)
+Vue.use(Dialog)
+Vue.use(Switch)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
+Vue.use(Tabs)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Carousel)
+Vue.use(CarouselItem)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Tooltip)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.use(Footer)
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(MenuItemGroup)
+Vue.use(Submenu)
+Vue.use(Radio)
+Vue.use(RadioButton)
+Vue.use(RadioGroup)
+Vue.use(DatePicker)
+Vue.use(TimePicker)
+Vue.use(TimeSelect)
+Vue.use(Pagination)
+Vue.use(Image)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Avatar)
+Vue.use(Dropdown)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Loading)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Popover)
+Vue.use(Collapse),
+    Vue.use(CollapseItem),
+    Vue.use(Alert),
+    Vue.use(Upload),
+    Vue.use(Tree),
+    Vue.use(Autocomplete),
+    Vue.use(Steps),
+    Vue.use(Step),
+    Vue.use(Transfer),
+    Vue.use(PageHeader),
+    Vue.use(Badge),
+    Vue.prototype.$message = Message;
+Vue.prototype.$notify = Notification
+Vue.prototype.$confirm = MessageBox.confirm;

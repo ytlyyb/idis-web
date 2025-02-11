@@ -1,0 +1,47 @@
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: 'iconfont';  /* Project id 4817227 */
+    src: url('//at.alicdn.com/t/c/font_4817227_nxtpors5rr.woff2?t=1737596073162') format('woff2'),
+         url('//at.alicdn.com/t/c/font_4817227_nxtpors5rr.woff?t=1737596073162') format('woff'),
+         url('//at.alicdn.com/t/c/font_4817227_nxtpors5rr.ttf?t=1737596073162') format('truetype');
+  }
+
+.idis-icons{
+    font-family: "idis-icons" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.idis-icon-shouye1:before {
+    content: "\e614";
+}
+
+.idis-icon-a-zhongyingwenzhongwen:before{
+    content: "\e609";
+}
+
+.idis-icon-zhongyingwenyingwen:before{
+    content: "\e686";
+}
+
+.idis-icon-dianbiaokongzhi:before{
+    content: "\e6b2";
+}
+
+.idis-icon-xitong:before{
+    content: "\e6b3";
+}
+
+.idis-icon-duxiecanshu:before{
+    content: "\e6b4";
+}
+
+.idis-icon-dianbiaoshuju:before{
+    content: "\e6b5";
+}
+
+.idis-icon-tuichu1:before{
+    content: "\e615";
+}

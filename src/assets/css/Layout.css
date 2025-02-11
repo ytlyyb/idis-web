@@ -1,0 +1,358 @@
+/* flex布局常用样式 */
+
+._row {
+    display: flex;
+    align-items: center;
+}
+
+._row_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._row_evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+._row_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._row_around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+._col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+._col_center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+._col_between {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+._col_around {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+._col_evenly {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text_ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pointer{
+    cursor: pointer;
+}
+._transition{
+    transition: all 0.5s ease-out;
+}
+
+
+/* 常用字体大小 */
+
+.font34 {
+    font-size: 34px;
+}
+
+.font32 {
+    font-size: 32px;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.font28 {
+    font-size: 28px;
+}
+
+.font26 {
+    font-size: 26px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.font22 {
+    font-size: 22px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font10 {
+    font-size: 10px;
+}
+
+.font8 {
+    font-size: 8px;
+}
+
+
+/* margin */
+
+.margin_bottom2 {
+    margin-bottom: 2px;
+}
+
+.margin_bottom4 {
+    margin-bottom: 4px;
+}
+
+.margin_bottom6 {
+    margin-bottom: 6px;
+}
+
+.margin_bottom8 {
+    margin-bottom: 8px;
+}
+
+.margin_bottom10 {
+    margin-bottom: 10px;
+}
+
+.margin_bottom12 {
+    margin-bottom: 12px;
+}
+
+.margin_bottom14 {
+    margin-bottom: 14px;
+}
+
+.margin_bottom16 {
+    margin-bottom: 16px;
+}
+
+.margin_bottom20 {
+    margin-bottom: 20px;
+}
+
+.margin_left6 {
+    margin-left: 6px;
+}
+
+.margin_left8 {
+    margin-left: 8px;
+}
+
+.margin_left10 {
+    margin-left: 10px;
+}
+
+.margin_left12 {
+    margin-left: 12px;
+}
+
+.margin_left14 {
+    margin-left: 14px;
+}
+
+.margin_left16 {
+    margin-left: 16px;
+}
+
+.margin_left20 {
+    margin-left: 20px;
+}
+.margin_left100 {
+    margin-left: 100px;
+}
+
+.margin_top8 {
+    margin-top: 8px;
+}
+
+.margin_top10 {
+    margin-top: 10px;
+}
+
+.margin_top12 {
+    margin-top: 12px;
+}
+
+.margin_top14 {
+    margin-top: 14px;
+}
+
+.margin_top16 {
+    margin-top: 16px;
+}
+
+.margin_top18 {
+    margin-top: 18px;
+}
+
+.margin_top20 {
+    margin-top: 20px;
+}
+
+.margin_top22 {
+    margin-top: 22px;
+}
+
+.margin_top24 {
+    margin-top: 24px;
+}
+
+.margin_right10 {
+    margin-right: 10px;
+}
+
+.margin_right12 {
+    margin-right: 12px;
+}
+
+.margin_right14 {
+    margin-right: 14px;
+}
+
+.margin_right16 {
+    margin-right: 16px;
+}
+
+.margin_right18 {
+    margin-right: 18px;
+}
+
+.margin_right20 {
+    margin-right: 20px;
+}
+
+.margin5{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bottom_paging {
+    width: 100%;
+    height: 80px;
+}
+
+._pagination {
+    float: right;
+    margin-top: 20px;
+}
+
+.bottom_pagination{
+    width: 100%;
+    height: 75px;
+    position: relative;
+    bottom: 0px;
+  }
+
+/* 常用颜色 */
+
+.color000 {
+    color: #000;
+}
+
+.color_333 {
+    color: #333;
+}
+
+.color_666 {
+    color: #666;
+}
+
+.color_999 {
+    color: #999;
+}
+
+.color_fff {
+    color: #fff;
+}
+
+.color_f5 {
+    color: #f5f5f5;
+}
+
+.color_eee {
+    color: #eeeeee;
+}
+
+.color_primary {
+    color: var(--theme_bg_color)
+}
+
+/* 公共文本类型颜色 */
+.text_color{
+    color: var(--theme_bg_color);
+}
+.text_color:hover{
+    color: var(--theme_bg_color);
+}
+  
+/* 文本提示按钮样式 */
+.btn-custom-confirm {
+    background-color: var(--theme_bg_color) !important;
+    border-color: var(--theme_bg_color) !important;
+    color: #fff !important;
+    border-radius:8px !important;
+}
+.btn-custom-cancel {
+    color: var(--theme_bg_color) !important;
+    background: var(--theme_buttonbg_color) !important;
+    border: 1px solid var(--theme_bg_color) !important;
+    border-radius:8px !important;
+}
+.btn-custom-cancel:hover {
+    color: #ffffff !important;
+    background: var(--theme_bg_color) !important;
+    border: 1px solid var(--theme_bg_color) !important;
+}
+
+/* 弹窗标题设置 */
+.dialog-title {
+    text-align: center;
+    font-size: 18px;
+    font-family: PingFang SC, PingFang SC-Bold;
+    font-weight: 700;
+    color: #ffffff;
+}
