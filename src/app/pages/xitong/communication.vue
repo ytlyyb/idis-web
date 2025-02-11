@@ -56,7 +56,7 @@
       <div class="form-row">
         <div class="select-left">
           <label>数据位</label>
-          <el-select v-model="value6" placeholder="请选择数据位">
+          <el-select v-model="value6" placeholder="请选择数据位"> 
             <el-option
               v-for="item in options6"
               :key="item.value"
@@ -118,7 +118,7 @@
 <script>
 import { mapActions } from 'vuex';
 
-export default {
+export default {  
   data() {
     return {
       options1: [
@@ -149,116 +149,147 @@ export default {
       value2: '选项2-1',
       options3: [
         {
-          value: '选项3-1',
+          value: 'COM1',
           label: 'COM1',
         },
         {
-          value: '选项3-2',
+          value: 'COM2',
           label: 'COM2',
         },
         {
-          value: '选项3-3',
+          value: 'COM3',
           label: 'COM3',
         },
       ],
-      value3: '选项3-1',
+      value3: 'COM1',
       options4: [
         {
-          value: '选项4-1',
+          value: '300',
           label: '300',
         },
         {
-          value: '选项4-2',
+          value: '600',
           label: '600',
         },
         {
-          value: '选项4-3',
+          value: '1200',
           label: '1200',
         },
         {
-          value: '选项4-4',
+          value: '2400',
           label: '2400',
         },
         {
-          value: '选项4-5',
+          value: '4800',
           label: '4800',
         },
         {
-          value: '选项4-6',
+          value: '9600',
           label: '9600',
         },
         {
-          value: '选项4-7',
+          value: '38400',
           label: '38400',
         },
         {
-          value: '选项4-8',
+          value: '57600',
           label: '57600',
         },
         {
-          value: '选项4-9',
+          value: '115200',
           label: '115200',
         },
       ],
-      value4: '选项4-6',
-      options5: [
-        {
-          value: '选项5-1',
-          label: 'No Parity',
-        },
-        {
-          value: '选项5-2',
-          label: 'Odd',
-        },
-        {
-          value: '选项5-3',
-          label: 'Even',
-        },
-      ],
-      value5: '选项5-1',
+      value4: '9600',
       options6: [
         {
-          value: '选项6-1',
+          value: '5',
           label: '5',
         },
         {
-          value: '选项6-2',
+          value: '6',
           label: '6',
         },
         {
-          value: '选项6-3',
+          value: '7',
           label: '7',
         },
         {
-          value: '选项6-4',
+          value: '8',
           label: '8',
         },
       ],
-      value6: '选项6-4',
+      value6: '8',
+      options5: [
+        {
+          value: '0',
+          label: 'No Parity',
+        },
+        {
+          value: '1',
+          label: 'Odd',
+        },
+        {
+          value: '2',
+          label: 'Even',
+        }
+      ],
+      value5: '0',
       options7: [
         {
-          value: '选项7-1',
+          value: '1',
           label: '1 stop bit',
         },
         {
-          value: '选项7-2',
-          label: '2 stop bits',
-        },
+          value: '2',
+          label: '2 stop bit'
+        }
       ],
-      value7: '选项7-1',
+      value7: '1',
       timeout: '',
       meterNumber: '',
       password: '',
+      responseCode: null // 用于保存接口返回的responseCode
     };
   },
   methods: {
     ...mapActions({
-      setpara:"SET_Para",
+      SET_Para: "SET_Para" // 映射Vuex中的SET_Para接口调用方法
     }),
-  handleRefresh() {
-    // 你的刷新逻辑
+    handleSubmit() {
+      // 从localStorage中获取token
+      // const token = localStorage.getItem('token');
+      // if (!token) {
+      //   console.error('未找到token，请先登录');
+      //   return;
+      // }
+      // 准备要发送的数据，从选择框中获取数据
+      const data = {
+        portName: this.value3,
+        baudRate: parseInt(this.value4),
+        dataBits: parseInt(this.value6),
+        stopBits: parseInt(this.value7),
+        parity: parseInt(this.value5),
+        // token: token // 添加token到数据中
+      };
+      // 调用SET_Para接口发送数据
+      this.SET_Para(data).then((response) => {
+        if (response && response.responseCode === 1) {
+          // 保存responseCode
+          this.responseCode = response.responseCode;
+          console.log('接口调用成功，responseCode已保存');
+        } else {
+          console.error('接口调用失败');
+        }
+      }).catch((error) => {
+        console.error('接口调用出错', error);
+      });
+    },
+    handleRefresh() {
+      // 刷新操作的逻辑
+      console.log('刷新串口列表');
+    }
   }
-}
 };
 </script>
 

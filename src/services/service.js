@@ -8,7 +8,12 @@ import token from './header'
 axios.interceptors.request.use(function (config) {
     //为请求头对象,添加token验证的Authorization字段
     console.log("axios", token.getToken(config.url));
-    config.headers.HTTP_ACCESS_TOKEN = token.getToken(config.url);
+    // config.headers.HTTP_ACCESS_TOKEN = token.getToken(config.url);
+    const tokenValue = token.getToken(config.url);
+    if (tokenValue) {
+        // 如果获取到的 token 不为空，则添加前缀 "Bearer "
+        config.headers.Authorization = `Bearer ${tokenValue}`;
+    }
     config.headers['Accept-Language'] = sessionStorage.getItem('acceptLanguage');
     // config.headers. = window.sessionStorage.getItem('token');
     // config.headers. = "9da280bf0aa04b02b529db43ebd79084";
